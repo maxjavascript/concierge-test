@@ -1,0 +1,11 @@
+.text {
+    margin: 0;
+}
+
+.text--h2 {
+    font: normal 400 28px/22px 'Italiana', Helvetica, Arial, sans-serif;
+}
+
+.text--h3 {
+    font: normal 700 12px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+}

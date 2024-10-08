@@ -1,0 +1,12 @@
+:root {
+    --palette-white: #FFFFFF;
+    --palette-black: #000000;
+    --palette-dark-blue: #13234C;
+
+    --palette-gray-dark: #687189;
+    --palette-gray-medium-dark: #80879A;
+    --palette-gray-medium: #B1B4BD;
+    --palette-gray-light: #ADB0B9;
+    --palette-gray-lighter: #A3A7B3;
+    --palette-gray-lightest: #D9D9D9;
+}

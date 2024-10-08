@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../git/sitemedia/css/normalize.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #13234C;
+            margin: 0;
+            color: white;
+        }
+
+        .text {
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .visually-hidden {
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            width: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+        }
+
+        /*Шапка*/
+        .page__header {
+            width: 100%;
+            outline: 1px solid red;
+        }
+
+        .page-header {
+            width: 100%;
+        }
+
+        .page-header__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 12px;
+            padding-top: 10px;
+        }
+
+
+        .page-header__ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 6px;
+            align-items: flex-end;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .search-input {
+            width: 60px;
+            height: 20px;
+            border: none;
+            border-radius: 22px;
+            background-color: #D9D9D9;
+            padding: 5px 26px 6px 10px;
+        }
+
+        .search-input-wrapper::after {
+            content: url('../../public/images/search.svg');
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+        }
+
+        /*Бегущая строка*/
+        .marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+
+        .marquee p {
+            font-size: 18px;
+            color: black;
+            padding: 10px;
+            margin: 0;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /*Main*/
+        .page__main {
+            width: 100%;
+            outline: 1px solid rgb(238, 255, 0);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-hot-new,
+        .section-category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 29px;
+        }
+
+        /* category-list */
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(3, 90px);
+            list-style-type: none;
+            gap: 45px;
+            margin: 0;
+            margin-top: 17px;
+            padding: 0;
+        }
+
+        .category-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .category-image {
+            width: 90px;
+            height: 92px;
+            border: 1px solid black;
+            border-radius: 31px;
+            background-color: #80879A;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            margin-bottom: 8px;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 22px;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .slider-item-1 {
+            width: 78px;
+            height: 258px;
+            border: 1px solid black;
+            border-radius: 31px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            /* background-image: url('https://m.mirkorma.ru/upload/medialibrary/951/951a1da50e746dbdcb5a733e8e977185.jpg'); */
+        }
+
+        .slider-item-3 {
+            width: 78px;
+            height: 258px;
+            border: 1px solid black;
+            border-radius: 31px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            /* background-image: url('https://m.mirkorma.ru/upload/medialibrary/951/951a1da50e746dbdcb5a733e8e977185.jpg'); */
+        }
+
+        .slider-item-2 {
+            width: 203px;
+            height: 258px;
+            border: 1px solid black;
+            border-radius: 31px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            /* background-image: url('https://m.mirkorma.ru/upload/medialibrary/951/951a1da50e746dbdcb5a733e8e977185.jpg'); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page__header">
+        <header class="page-header">
+            <nav class="page-header__nav">
+                <div class="page-header__logo">
+                    <a href="#">
+                        <span class="visually-hidden">На главную</span>
+                        <img src="../../public/images/logo.svg" width="72" height="51" alt="Логотип">
+                    </a>
+                </div>
+
+                <ul class="page-header__ul">
+                    <li>
+                        <div class="search-input-wrapper">
+                            <!-- Поиск -->
+                            <input class="search-input" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Личный кабинет -->
+                        <a href="#">
+                            <img src="../../public/images/profile.svg" width="24" alt="Мой профиль">
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Корзина -->
+                        <a href="#">
+                            <img src="../../public/images/cart.svg" width="24" height="24" alt="Корзина">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="marquee-wrapper">
+        <div class="marquee">
+            <p>Добро пожаловать в наш интернет-магазин! Здесь вы найдете лучшие товары по выгодным ценам!</p>
+        </div>
+    </div>
+
+    <div class="page__main">
+        <main class="page-main">
+            <h1 class="visually-hidden">Интернет-магазин AS Concierge</h1>
+
+            <!-- Карусель -->
+            <section class="section-hot-new">
+                <a class="section-title" href="#">
+                    <h2 class="text text--h2">hot new</h2>
+                </a>
+                <div class="slider-wrapper">
+                    <div class="slider-item-1"></div>
+                    <div class="slider-item-2"></div>
+                    <div class="slider-item-3"></div>
+                </div>
+            </section>
+
+            <section class="section-category">
+                <a class="section-title" href="#">
+                    <h2 class="text text--h2">category</h2>
+                </a>
+                <div class="category-list-wrapper">
+                    <ul class="category-list">
+                        <li class="category-item">
+                            <a href="#">
+                                <div class="category-image"></div>
+                                <h3 class="text text--h3">одежда</h3>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#">
+                                <div class="category-image"></div>
+                                <h3 class="text text--h3">косметика</h3>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#">
+                                <div class="category-image"></div>
+                                <h3 class="text text--h3">электроника</h3>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#">
+                                <div class="category-image"></div>
+                                <h3 class="text text--h3">украшения</h3>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#">
+                                <div class="category-image"></div>
+                                <h3 class="text text--h3">сладости</h3>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#">
+                                <div class="category-image"></div>
+                                <h3 class="text text--h3">лекарства и БАДы</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+</body>
+
+</html>
