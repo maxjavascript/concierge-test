@@ -1,17 +1,15 @@
 import React from 'react'
 import Header from '../components/Header'
-import Marquee from '../components/Marquee'
-import MainHome from '../components/MainHome'
+import MainAccount from '../components/MainAccount'
 import '../styles/index.css'
 
-const HomePage = () => {
+const AccountPage = () => {
     return (
         <div className='HomePage'>
             <Header />
-            <Marquee />
-            <MainHome />
+            <MainAccount />
         </div>
     )
 }
 
-export default HomePage
+export default AccountPage

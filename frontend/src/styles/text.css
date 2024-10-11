@@ -9,3 +9,15 @@
 .text--h3 {
     font: normal 700 12px/22px 'Montserrat', Helvetica, Arial, sans-serif;
 }
+
+.text--h3-medium {
+    font: normal 500 16px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.text--breadcrumbs {
+    font: normal 700 8px/22px 'Inter', Helvetica, Arial, sans-serif;
+}
+
+.text--description {
+    font: normal 500 12px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+}
