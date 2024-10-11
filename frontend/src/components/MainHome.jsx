@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import '../styles/Main.css'
+import { Link } from 'react-router-dom'
+import '../styles/MainHome.css'
 
-const Main = () => {
+const MainHome = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const images = [
@@ -75,9 +76,9 @@ const Main = () => {
 
                 {/* Category */}
                 <section className='section-category'>
-                    <a className='section-title' href='#'>
+                    <Link className='section-title' to='/categories'>
                         <h2 className='text text--h2'>category</h2>
-                    </a>
+                    </Link>
                     <div className='category-list-wrapper'>
                         <ul className='category-list'>
                             {categoryItems.map((item, index) => (
@@ -98,4 +99,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default MainHome
