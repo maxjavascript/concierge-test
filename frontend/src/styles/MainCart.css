@@ -36,6 +36,7 @@
     padding: 18px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .cart-list-items {
@@ -117,23 +118,80 @@
 .about-order-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 .about-order-description-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .about-order-description-title {
     margin: 0;
-    padding: 0;
     font: normal 400 14px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+    margin-right: auto;
 }
 
 .about-order-description-sum {
     margin: 0;
     font: normal 400 14px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+    margin-left: auto;
+}
+
+.promocode-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+
+.promocode-wrapper-title {
+    font: normal 400 14px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+    margin: 0;
+    margin-right: auto;
+}
+
+.promocode-input {
+    width: 115px;
+    background-color: var(--palette-gray-lightest);
+    border: none;
+    border-radius: 31px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+}
+
+.results-order-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.results-order-title {
+    margin: 0;
+    font: normal 600 18px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+    margin-right: auto;
+}
+
+.results-order-value {
+    margin: 0;
+    font: normal 600 18px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+    margin-left: auto;
+}
+
+.cart-button-wrapper {
+    background-color: var(--palette-gray-medium-dark);
+    border-radius: 31px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 263px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.cart-button {
+    font: normal 600 18px/22px 'Montserrat', Helvetica, Arial, sans-serif;
+
 }

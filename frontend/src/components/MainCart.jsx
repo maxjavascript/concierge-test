@@ -84,17 +84,27 @@ const MainCart = () => {
                                         8 198 руб
                                     </p>
                                 </li>
-                                <li className='about-order-description-item'>
-                                    <h3 className='about-order-description-title'>
-                                        Доставка выбрать
-                                    </h3>
-                                    <p className='about-order-description-sum'>
-                                        8 198 руб
-                                    </p>
-                                </li>
                             </ul>
+                            <div className='promocode-wrapper'>
+                                <h3 className='promocode-wrapper-title'>
+                                    Промокод
+                                </h3>
+                                <input
+                                    className='promocode-input'
+                                    type='text'
+                                />
+                            </div>
+                            <div className='results-order-item'>
+                                <p className='results-order-title'>Итого</p>
+                                <p className='results-order-value'>8 198 руб</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div className='cart-button-wrapper'>
+                    <Link className='cart-button' to='/'>
+                        Перейти к оплате
+                    </Link>
                 </div>
             </main>
         </div>
