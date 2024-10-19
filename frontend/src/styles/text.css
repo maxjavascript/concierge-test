@@ -14,6 +14,10 @@
     font: normal 500 16px/22px 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
+.text--h3-new {
+    font: normal 300 12px/14px 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
 .text--breadcrumbs {
     font: normal 700 8px/22px 'Inter', Helvetica, Arial, sans-serif;
 }

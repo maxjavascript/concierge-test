@@ -15,7 +15,7 @@ const MainAccount = () => {
                 <div className='options-wrapper'>
                     <ul className='options-list'>
                         <li className='options-item'>
-                            <Link className='options-link' to='/order-history'>
+                            <Link className='options-link' to='/history'>
                                 <span className='text text--h3-medium'>
                                     История заказов
                                 </span>
